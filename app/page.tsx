@@ -6,7 +6,7 @@ export default function Home() {
     <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-24">
       <div className="space-y-8 text-center">
         <h1 className="text-6xl font-bold tracking-tighter sm:text-7xl md:text-8xl">
-          CSENotes <span className="inline-block animate-bounce">🚀</span>
+          CSENotes
         </h1>
         <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
           Your premium academic notes portal is now live and fully refactored for Next.js 16.
