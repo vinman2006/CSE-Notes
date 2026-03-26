@@ -1,5 +1,6 @@
 import { subjects } from "@/data/subjects";
 import SubjectClient from "@/components/SubjectClient";
+import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
   return subjects.map((subject) => ({
@@ -7,13 +8,16 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function Page({
+export default function Page({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }) {
-  const { slug } = await params;
-  const subject = subjects.find((s) => s.slug === slug);
+  const subject = subjects.find((s) => s.slug === params.slug);
+
+  if (!subject) {
+    notFound();
+  }
 
   return <SubjectClient subject={subject} />;
 }
