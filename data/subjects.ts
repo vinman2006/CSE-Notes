@@ -83,4 +83,23 @@ export const subjects: Subject[] = [
       { unit: "Unit 2", title: "Temperature and Pressure Sensors" },
     ],
   },
+  {
+    slug: "java-programming-lab",
+    type: "lab",
+    subject_name: "Java Programming Lab",
+    units: [
+      { unit: "Experiment 1", title: "Method Overloading", topics: ["Multiple methods with same name", "Different parameters"] },
+      { unit: "Experiment 2", title: "Constructor & Types of Constructor", topics: ["Default constructor", "Parameterized constructor"] },
+      { unit: "Experiment 3", title: "Types of Array", topics: ["Single dimensional arrays", "Multidimensional arrays"] },
+      { unit: "Experiment 4", title: "Inheritance", topics: ["Code reusability", "Hierarchical relationships"] },
+      { unit: "Experiment 5", title: "Method Overriding", topics: ["Specific implementation in subclass"] },
+      { unit: "Experiment 6", title: "Interfaces", topics: ["Multiple inheritance", "Abstraction"] },
+      { unit: "Experiment 7A", title: "Exception Handling", topics: ["try, catch, finally", "throw and throws"] },
+      { unit: "Experiment 7B", title: "User Defined Exception", topics: ["Custom exception class"] },
+      { unit: "Experiment 8", title: "Threading & Thread Class Methods", topics: ["Multithreading", "Thread class methods"] },
+      { unit: "Experiment 9", title: "String Class & Its Methods", topics: ["String manipulation methods"] },
+      { unit: "Experiment 10", title: "Date Time & Calendar Class", topics: ["Handling date and time operations"] },
+      { unit: "Experiment 11", title: "List and Set Interface (Collections Framework)", topics: ["Commonly used methods"] },
+    ],
+  },
 ];

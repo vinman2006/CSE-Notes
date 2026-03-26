@@ -8,12 +8,13 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function Page({
+export default async function Page({
   params,
 }: {
-  params: { slug: string };
+  params: Promise< { slug: string } >;
 }) {
-  const subject = subjects.find((s) => s.slug === params.slug);
+  const { slug } = await params;
+  const subject = subjects.find((s) => s.slug === slug);
 
   if (!subject) {
     notFound();
