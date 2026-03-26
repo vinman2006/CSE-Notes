@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "CAC Notes Portal",
+  title: "CSENotes",
   description: "Minimal academic notes portal",
 };
 
@@ -37,7 +37,7 @@ export default function RootLayout({
         <Providers>
           <nav className="fixed top-0 w-full p-6 flex justify-between items-center z-50 bg-background/90 backdrop-blur-md border-b-[3px] border-foreground/10">
             <div>
-              <h1 className="font-sketch text-2xl tracking-widest uppercase ml-4">CSE Notes</h1>
+              <h1 className="font-sketch text-2xl tracking-widest uppercase ml-4">CSENotes</h1>
             </div>
             <div className="mr-4">
               <ThemeToggle />
